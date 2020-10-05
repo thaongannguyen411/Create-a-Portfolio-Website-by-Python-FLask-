@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Website</title>
+ <style>
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #efb78f;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:  #e68c4d;
+}
+
+.active {
+  background-color:  #e68c4d;
+}
+</style>
+  </head>
+  <body>
+
+          <ul>
+
+            <li><a href="{{ url_for('project') }}">Project</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+          </ul>
+
+
+      {% block content %}
+      {% endblock %}
+
+  </body>
+</html>
