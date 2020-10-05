@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<style>
+
+.about {
+  background-color: white;
+  color: #e99b63;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.main {
+  color:  #e27e36;
+  font-size: 25px;
+  margin-top: 50px;
+}
+.footer {
+  background-color: #efb78f;
+  color: white;
+  padding: 2.5px;
+  font-size: 20px;
+  margin-bottom: :0px;
+  margin-top: 200px;
+}
+</style>
+</head>
+<body>
+  {% extends "layout.html" %}
+  {% block content %}
+
+<div class="main">
+  <h1>Hello, I'm Vivian Nguyen</h1>
+</div>
+
+
+
+<div class="about">
+  <p>I'm studying second year in University of Technology Sydney (UTS) and my
+    major is Communication (Digital & Social Media). In this major, I also learn
+    about user experience design and user interface design.</p>
+  <p>I'm interested in creating products or developments to not only solve user
+    problems but support companies to achieve their long-term goals.</p>
+  <p>I'm also passionate to explore the creativity, innovation in the design
+    thinking around technological products.</p>
+  <p>With my team, we created a project called 'HOME BASE'. Home Base is established into giving an innovative and accessible way for international student
+    in Sydney in finding a 'home'.</p>
+</div>
+
+<div class="footer">
+  <p style="text-decoration: underline; float:left"><strong>Let's contact me:</strong></p>
+  <pre style="overflow:auto; padding-left:0px;">
+    viviannguyen784@gmail.com
+    (+61)402 813 491
+ </pre>
+  <p style="text-decoration: underline; float:left; padding-bottom:0;"><strong>Quick Links:</strong></p>
+  <pre style="overflow:auto; margin-top:38px; padding-left:30px;">
+    About
+    Project
+</pre>
+</div>
+  {% endblock %}
+</body>
+</html>
